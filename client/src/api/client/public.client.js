@@ -1,7 +1,7 @@
 import axios from "axios";
 import queryString from "query-string";
 
-const baseURL = "https://netflix-luandev.onrender.com/api/v1/";
+const baseURL = process.env.REACT_APP_API_KEY;
 
 const publicClient = axios.create({
   baseURL,
